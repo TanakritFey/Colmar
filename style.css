@@ -128,7 +128,7 @@ button a {
 }
 .information-text>p{
     padding-bottom: 32px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--drak-grey);
 }
 /* blog menu ด้านซ้าย */ 
@@ -210,7 +210,7 @@ button a {
 }
 .coruse-text>.p{
     padding-bottom: 8px;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .coruse-text>.course-p{
     padding-bottom: 24px;
