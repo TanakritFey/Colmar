@@ -37,7 +37,7 @@
     align-items: ceenter;
 }
 span{
-    color: var(--lightest-grey)
+    color: var(--light-grey);
 }
 .navbar-link{
     display: flex;
