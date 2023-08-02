@@ -64,11 +64,7 @@ span{
     /* justify-content: center; */
 }
 /* image ของ Hero */
-.hero-banner{
-    /* border: 1px solid red; */
-    margin: 32px 24px;
-    width: 60%;
-}
+
 .hero-banner img{ 
     width: 100%; /* ขนาด ความกว้างของรูป banner */
     height: auto;
@@ -103,6 +99,7 @@ button a {
     color: white;
     font-weight: bold;
 }
+
 
 /* --------------------------------------------- */
 /* Section ของ Information หน้า 2 */
@@ -310,6 +307,11 @@ footer{
     .thesis-text>p{
         font-size: 1.1rem;
         color: var(--drak-grey);
+    }
+    .hero-banner{
+    
+        margin: 32px 24px;
+        width: 60%;
     }
 }
 
