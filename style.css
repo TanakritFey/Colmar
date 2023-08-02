@@ -28,6 +28,17 @@
     margin-left: 24px;
     height: 32px;
 }
+.logo img{
+    height: 45px;
+    align-items: center;
+}
+.logo h1,span{
+    font-size: 1.2rem;
+    align-items: ceenter;
+}
+span{
+    color: var(--lightest-grey)
+}
 .navbar-link{
     display: flex;
     gap: 16px;
