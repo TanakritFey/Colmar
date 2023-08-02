@@ -85,6 +85,7 @@ button{
     padding: 8px;
     font-size: 1.2rem;
     /* border: 1px solid red; */
+    border: none;
 }
 button a {
     text-decoration: none;
@@ -179,14 +180,7 @@ button a {
 .course>h2{
     text-align: center;
 }
-/* course-con คุมการใช้ grid แบ่ง column เป็น 3 คอลัมน์ */
-.course-con{
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* border: 1px solid red; */
-    gap: 32px;
-    margin: 0 72px;
-}
+
 .course-card img{
     width: 100%;
     height: auto;
@@ -215,59 +209,7 @@ button a {
 /* --------------------------------------------- */
 /* Section ของ Thesis หน้า 4 */
 /* thesis-con ใช้ grid แบ่ง column ของ 2 class ด้านซ้าย-ขวา */
-.thesis-con{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    /* border: 1px solid red; */
-    margin-top:32px
-}
-.title-thesis{
-    padding-top: 32px;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: var(--drak-grey);
-}
-video{
-    width: 100%;
-}
-.thesis-vdo{
-    /* border: 1px solid red; */
-    margin-left: 24px;
-    margin-bottom: 32px;
-}
-.vdo-box>h3{
-    padding-top: 24px;
-    font-size: 2rem;
-}
-.vdo-box>p{
-    padding-top: 8px;
-    font-size: 1.3rem;
-    width: 100%;
-}
-.thesis-info{
-    /* border: 1px solid red; */
-    align-items: center;
-}
-.thesis-card{
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-}
-.thesis-card img{
-    width: 35%;
-    padding: 16px; 
-}
-.thesis-text>h3{
-    padding-bottom: 8px;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    color: var(--drak-grey);
-}
-.thesis-text>p{
-    font-size: 1.1rem;
-    color: var(--drak-grey);
-}
+
 
 /* --------------------------------------------- */
 /* Footer */
@@ -296,11 +238,177 @@ footer{
     .mobile{
         display: none;
     }
+    .course-con{
+        display: grid ;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* border: 1px solid red; */
+        gap: 32px;
+        margin: 0 72px;
+    }
+    
+    video{
+        width: 100%;
+    }
+    .thesis-con{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        /* border: 1px solid red; */
+        margin-top:32px
+    }
+    .title-thesis{
+        padding-top: 32px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: var(--drak-grey);
+    }
+    
+    .thesis-vdo{
+        /* border: 1px solid red; */
+        margin-left: 24px;
+        margin-bottom: 32px;
+    }
+    .vdo-box>h3{
+        padding-top: 24px;
+        font-size: 2rem;
+    }
+    .vdo-box>p{
+        padding-top: 8px;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .thesis-info{
+        /* border: 1px solid red; */
+        align-items: center;
+    }
+    .thesis-card{
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+    }
+    .thesis-card img{
+        width: 35%;
+        padding: 16px; 
+    }
+    .thesis-text>h3{
+        padding-bottom: 8px;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: var(--drak-grey);
+    }
+    .thesis-text>p{
+        font-size: 1.1rem;
+        color: var(--drak-grey);
+    }
 }
 
 /* ขนาดของ mobile */
 @media only screen and (max-width:425px){
     .desktop{
         display: none;
+    }
+    .header-mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 64px;
+        width: 100%;
+        /* position: fixed;
+        top:0; */
+        background-color: white;
+    }
+    .hero-con{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        padding: 0px 16px;
+    }
+    .hero-info>h1{
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+    .hero-info>p{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .hero-banner{
+        width: 100%;
+    }
+    .hero-banner img {
+        width: 100%;
+        height: 100%;
+    }
+    .hero-btn{
+        margin-bottom: 32px;
+        width: 100%;
+    }
+    .hero-btn>a{
+        font-size: 1.1rem;
+    }
+    /* class information */
+    .information-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .information-menu{
+        width: 100%;  
+    }
+    .information-item img{
+        width: 100%;
+        padding-right: 16px;
+    }
+    .information-box{
+        padding-left: 32px;
+    }
+    .information-btn{
+        padding-bottom: 32px;
+    }
+
+    /* Start learning */
+    .course{
+        background-color: white;
+        border: 1px solid var(--lightest-grey);
+        border-top: none;
+    }
+    .course-con{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .course-card{
+        margin-bottom: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+        background-color: var(--lighter-grey);
+    }
+
+    /* Thesis exhibit */
+    .title-thesis{
+        text-align: center;
+        margin-top: 32px;
+        padding-bottom: 16px;
+        font-size: 2.5rem;
+    }
+    .thesis-vdo{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+    }
+   /*  .thesis-vdo video{
+        border: 1px solid red;
+        width: 100%;
+    } */
+    .vdo{
+       width: 100%;
+      /*  border: 1px solid red; */
+      margin-bottom: 24px;
+    }
+    .vdo video{
+        width: 100%;
+    }
+    footer{
+        padding: 24px 16px;
     }
 }
