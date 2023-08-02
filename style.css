@@ -165,8 +165,11 @@ button a {
     color: var(--drak-grey);
 }
 .information-box>p{
-    font-size: 14px;
+    font-size: 1.12rem;
     color: var(--drak-grey)
+}
+.information-box>a{
+    text-decoration: none;
 }
 .information-btn{
     padding-top: 8px;
