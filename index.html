@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colmar Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!-- navbar mobile -->
+    <div class="header-mobile mobile">
+        <a href="#"><img src="capstone_colmar_assets/images/ic-logo.svg" alt="ic-logo"></a>
+        <a href="#"><img src="capstone_colmar_assets/images/ic-on-campus.svg" alt="ic-on campus"></a>
+        <a href="#"><img src="capstone_colmar_assets/images/ic-online.svg" alt="ic-online"></a>
+        <a href="#"><img src="capstone_colmar_assets/images/ic-login.svg" alt=""></a>
+    </div>
+
+    <!-- nav bar -->
+    <header class="header-box desktop">
+        <!--   logo ด้านบน ซ้ายมือ -->
+            <div class="logo">
+                <img src="capstone_colmar_assets/images/ic-logo.svg" alt="ic-logo">
+                <h1>COLMAR<span>ACEADEMY</span></h1>
+            </div>
+
+        <!--   navbar link ขวามือ --> 
+        <nav>
+            <ul class="navbar-link">
+                <li><a href="#">On campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">For companies</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ------------------------------------------ -->
+    <main>
+        <section class="hero">
+            <div class="hero-con"> <!--  ใช้แบ่ง website ของ banner และ text  -->
+                <!--  Banner ของ หน้าแรก -->
+                <div class="hero-banner">
+                    <img src="capstone_colmar_assets/images/banner.jpg" alt="Banner">
+                </div>
+                <!--  ข้อมูลด้านขวาของ Banner -->
+                <div class="hero-info">
+                    <h1>Learn something new everyday</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button class="hero-btn"><a href="#">Start here</a></button> <!-- button start here -->
+                </div>
+            </div>
+        </section>
+    <!-- ------------------------------------------ -->
+    <!-- Page 2 -->   
+        <section class="information">
+            <div class="information-con"> <!-- ไว้ใช้ flex กับ class blog-info และ blog-menu -->
+                <!-- TODO => image ด้านซ้าย -->
+                <div class="information-info desktop">
+                    <img class="desktop" src="capstone_colmar_assets/images/information-main.jpg" alt="It doesn't hurt to keep practicing">
+                        <div class="information-text">
+                            <h2>It doesn't hurt to keep practicing</h2>
+                            <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus,
+                                nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
+                                eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                            <p>Emanuel, Sr Strategist at Hiring.com</p>
+                        </div>
+                </div>
+
+                <!-- TODO => menu ด้านขวา -->
+                <div class="information-menu">
+                    <div class="information-item card1"> <!-- TODO => กล่องที่ 1 -->
+                        <img class="card-img desktop" src="capstone_colmar_assets/images/information-orientation.jpg" alt="Orientation date desktop">
+                        <img class="card-img mobile" src="capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="Orientation date mobile" >
+                        <div class="information-box">
+                            <h4>Orientation date</h4>
+                            <p>Tue 10/11 & Wed 10/12: 8am-pm</p>
+                            <a href="#" class="information-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="information-item card2"> <!-- TODO => กล่องที่ 2 -->
+                        <img class="card-img desktop" src="capstone_colmar_assets/images/information-campus.jpg" alt="Our campus desktop">
+                        <img class="card-img mobile" src="capstone_colmar_assets/images/information-campus-mobile.jpg" alt="Our campus mobile" >
+                        <div class="information-box">
+                            <h4>Our campus</h4>
+                            <p>Find which campus is close by you</p>
+                            <a href="#" class="information-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="information-item card3"> <!-- TODO => กล่องที่ 3 -->
+                        <img class="card-img desktop" src="capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Our guest lecture desktop">
+                        <img class="card-img mobile" src="capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="Our guest lect mobile" >
+                        <div class="information-box">
+                            <h4>Our guest lecture</h4>
+                            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                            <a href="#" class="information-btn">Read more</a>
+                        </div>
+                    </div>
+                </div> <!-- </div> ของ Class = blog-menu -->
+
+            </div> <!-- tag </div> ของ Class = blog-con -->
+        </section>
+        <!-- ------------------------------------------ -->
+    <!-- Page 3 หน้า 3 Start Learning -->  
+        <section class="course">
+                <h2 class="course-title">Start learning</h2> <!-- หัวข้อ title : Start Learning -->
+                
+                <div class="course-con"> <!-- ใช้ควบคุมโดยจะใช้ Flex คุม 2 Class => course-info1 และ course-info2 -->
+        
+                        <div class="course-card"> <!-- TODO card 1 : Software engineering -->
+                            <img class="desktop" src="capstone_colmar_assets/images/course-software.jpg" alt="Software engineering">
+                            <div class="coruse-text"> <!-- class คุมข้อความ text -->
+                                <h3>Software engineering</h3>
+                                <p class="p desktop">COURSE</p>
+                                <p class="course-p desktop">Web Development, Mobile Development, IOT,APIs</p>
+                            </div>
+                        </div>
+                        <div class="course-card"> <!-- TODO card 2 : Computer art -->
+                            <img class="desktop" src="capstone_colmar_assets/images/course-computer-art.jpg" alt="Computer art">
+                            <div class="coruse-text"> <!-- class คุมข้อความ text -->
+                                <h3>Computer art</h3>
+                                <p class="p desktop">COURSE</p>
+                                <p class="course-p desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                            </div>
+                        </div>
+                        <div class="course-card"> <!-- TODO card 3 : Design -->
+                            <img class="desktop" src="capstone_colmar_assets/images/course-design.jpg" alt="Design">
+                            <div class="coruse-text"> <!-- class คุมข้อความ text -->
+                                <h3>Design</h3>
+                                <p class="p desktop">COURSE</p>
+                                <p class="course-p desktop">User Experience Design, User Research, Visual Design</p>
+                            </div>
+                        </div>
+
+                        <div class="course-card"> <!-- TODO card 4 : Data -->
+                            <img class="desktop" src="capstone_colmar_assets/images/course-data.jpg" alt="Data">
+                            <div class="coruse-text"> <!-- class คุมข้อความ text -->
+                                <h3>Data</h3>
+                                <p class="p desktop">COURSE</p>
+                                <p class="course-p desktop">Data Science, Big Data, SQL, Data Visualization</p>
+                            </div>
+                        </div>
+
+                        <div class="course-card"> <!-- TODO card 5 : Business -->
+                            <img class="desktop"  src="capstone_colmar_assets/images/course-business.jpg" alt="Business">
+                            <div class="coruse-text"> <!-- class คุมข้อความ text -->
+                                <h3>Business</h3>
+                                <p class="p desktop">COURSE</p>
+                                <p class="course-p desktop">Product Development, Business Development, Startup</p>
+                            </div>
+                        </div>
+
+                        <div class="course-card"> <!-- TODO card 6 : Marketing -->
+                            <img class="desktop"  src="capstone_colmar_assets/images/course-marketing.jpg" alt="Marketing">
+                            <div class="coruse-text"> <!-- class คุมข้อความ text -->
+                                <h3>Marketing</h3>
+                                <p class="p desktop">COURSE</p>
+                                <p class="course-p desktop">Analytics, Content Marketing, Mobile Marketing</p>
+                            </div>
+                        </div>
+
+                </div> <!-- </div> ของ Class = course-con -->
+        </section>
+
+        <!-- ------------------------------------------ -->
+    <!-- Page 4 หน้า 4 Start Learning -->  
+        <section class="thesis">
+                <h2 class="title-thesis">Thesis exhibit</h2>
+
+                <div class="thesis-con"> <!--TODO thesis-con ใช้คุม 2 class เพื่อใช้ flex -->
+                    
+                    <div class="thesis-vdo"> <!-- TODO class คุม video และ text ด้านซ้าย -->
+                        <div class="vdo"> <!-- คลุม video -->
+                            <video controls playsinline autoplay muted loop>
+                                <source src="capstone_colmar_assets/videos/thesis.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="vdo-box desktop"> <!-- คลุม text ใต้ Video ด้านซ้าย -->
+                            <h3>Reimagine urban</h3>
+                            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec
+                                consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
+                                magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                        </div>
+                    </div> <!-- </div> ของ class = thesis-vdo -->
+
+                    <div class="thesis-info desktop"> <!-- TODO thesis-info ใช้คลุม text imgข้อมูล ด้านขวา -->
+                        <div class="thesis-card"> <!-- thesis-card => กล่องที่ 1 Fisma ด้านขวา -->
+                                <img src="capstone_colmar_assets/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype">
+                            <div class="thesis-text ">
+                                <h3>Fisma: Design and Prototype</h3>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </div>
+
+                        <div class="thesis-card"> <!-- thesis-card => กล่องที่ 2 Now and then ด้านขวา -->
+                                <img src="capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="Fisma: Design and Prototype">
+                            <div class="thesis-text">
+                                <h3>Now and then</h3>
+                                <p>Research study about New York</p>
+                            </div>
+                        </div>
+                    </div> <!-- </div> ของ class = thesis-info -->
+
+                </div> <!-- </div> ของ class = thesis-con -->
+        </section>
+
+        <!-- ------------------------------------------ -->
+    <!-- Footer -->  
+        <footer>
+            <p>&copy;2016 Colmar Academy. All rights reserved</p>
+            <div class="footer desktop">
+                <p><a href="#">Terms</a></p>
+                <p><a href="#">Privacy</a></p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>

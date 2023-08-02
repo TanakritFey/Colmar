@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+:root{
+    --drak-grey: #3c3b3c;
+    --light-grey: #8e8e8e;
+    --lighter-grey: #dfdfdf;
+    --lightest-grey: #e9e9e9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.body{
+    max-width: 1140px;
+}
+.header-box{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    height: 32px;
+}
+.navbar-link{
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    padding-right: 24px;
+}
+.navbar-link a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-link li{
+    list-style: none;
+}
+
+/* --------------------------------------------- */
+/* Section ของ Hero ที่กำหนด banner หน้าแรก */
+.hero{
+    background-color: var(--lightest-grey);
+}
+.hero-con{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+/* image ของ Hero */
+.hero-banner{
+    /* border: 1px solid red; */
+    margin: 32px 24px;
+    width: 60%;
+}
+.hero-banner img{ 
+    width: 100%; /* ขนาด ความกว้างของรูป banner */
+    height: auto;
+}
+/* info ข้อความ ด้านขวา */
+.hero-info{
+    width: 350px;
+    /* border: 1px solid red; */
+}
+.hero-info>h1{
+    font-size: 2.9rem;
+    padding-bottom: 24px;
+    color: var(--drak-grey);
+    font-weight: bolder;
+}
+.hero-info>p{
+    font-size: 1.7rem;
+    padding-bottom: 24px;
+    color: var(--drak-grey);
+    font-weight: bold;
+}
+button{
+    background-color: var(--drak-grey);
+    width: 95%;
+    padding: 8px;
+    font-size: 1.2rem;
+    /* border: 1px solid red; */
+}
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* --------------------------------------------- */
+/* Section ของ Information หน้า 2 */
+.information-con{
+    display: flex;
+
+}
+/* blog ด้านขวา */
+.information-info{    
+    /* border: 1px solid red; */
+    width: 67%;
+    margin: 32px 24px;
+}
+.information-info img{
+    width: 100%;
+}
+.information-text h2{
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: var(--drak-grey)
+}
+.information-text>p{
+    padding-bottom: 32px;
+    font-size: 1rem;
+    color: var(--drak-grey);
+}
+/* blog menu ด้านซ้าย */ 
+.information-menu{
+    /* border: 1px solid red; */
+    width: 40%;
+    border: 1px solid var(--lightest-grey);
+}
+.information-menu .card1{
+    padding-top: 32px;
+}
+.card2,.card3{
+    padding-top: 16px;
+}
+.information-item img{
+    width: 40%;
+    height: auto;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+.information-item{
+    display: flex;
+    width: 100%;  
+    height: auto;
+    align-items: center;
+    border: 1px solid var(--lightest-grey);
+    border-top: none;
+    padding-left: 16px;
+}
+.information-box{
+    display: flex;
+    flex-direction: column;
+}
+.information-box>h4{
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    color: var(--drak-grey);
+}
+.information-box>p{
+    font-size: 14px;
+    color: var(--drak-grey)
+}
+.information-btn{
+    padding-top: 8px;
+    color: blue
+}
+/* --------------------------------------------- */
+/* Section ของ Course หน้า 3 */
+.course{
+    background-color: var(--lightest-grey);
+    /* border: 1px solid red; */
+    padding-bottom: 32px;
+}
+.course-title{
+    padding: 32px 0px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--drak-grey);
+}
+.course>h2{
+    text-align: center;
+}
+/* course-con คุมการใช้ grid แบ่ง column เป็น 3 คอลัมน์ */
+.course-con{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 1px solid red; */
+    gap: 32px;
+    margin: 0 72px;
+}
+.course-card img{
+    width: 100%;
+    height: auto;
+}
+.course-card{
+    /* border: 1px solid red; */
+    background-color: white;
+}
+.coruse-text{
+    padding-left: 16px;
+}
+.coruse-text>h3{
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 1.8rem;
+}
+.coruse-text>.p{
+    padding-bottom: 8px;
+    font-size: 1rem;
+}
+.coruse-text>.course-p{
+    padding-bottom: 24px;
+    font-size: 1rem;
+}
+
+/* --------------------------------------------- */
+/* Section ของ Thesis หน้า 4 */
+/* thesis-con ใช้ grid แบ่ง column ของ 2 class ด้านซ้าย-ขวา */
+.thesis-con{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* border: 1px solid red; */
+    margin-top:32px
+}
+.title-thesis{
+    padding-top: 32px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--drak-grey);
+}
+video{
+    width: 100%;
+}
+.thesis-vdo{
+    /* border: 1px solid red; */
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+.vdo-box>h3{
+    padding-top: 24px;
+    font-size: 2rem;
+}
+.vdo-box>p{
+    padding-top: 8px;
+    font-size: 1.3rem;
+    width: 100%;
+}
+.thesis-info{
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.thesis-card{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.thesis-card img{
+    width: 35%;
+    padding: 16px; 
+}
+.thesis-text>h3{
+    padding-bottom: 8px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: var(--drak-grey);
+}
+.thesis-text>p{
+    font-size: 1.1rem;
+    color: var(--drak-grey);
+}
+
+/* --------------------------------------------- */
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: var(--drak-grey);
+    padding: 16px 24px;
+    border-top:1px solid var(--lighter-grey) ;
+}
+.hr{
+    color: var(--lighter-grey)
+}
+.footer{
+    display: flex;
+    gap: 16px;
+}
+.footer>p>a{
+    text-decoration: none;
+    color: var(--drak-grey);
+}
+
+/* ------------------------------- */
+/* ขนาดของ desktop */
+@media only screen and (min-width:426px){
+    .mobile{
+        display: none;
+    }
+}
+
+/* ขนาดของ mobile */
+@media only screen and (max-width:425px){
+    .desktop{
+        display: none;
+    }
+}
